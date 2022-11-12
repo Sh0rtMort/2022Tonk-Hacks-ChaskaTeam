@@ -2,15 +2,17 @@
 <html>
 <head>
     <title></title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <h1>My First Web Page</h1> <!--Make a good name for this</!-->
-    <p>This is my first web page.</p>
-
-    <button onclick="myFunction()">Click me</button>
-    <button onclick="myFunction()">Click me</button>
-    <button onclick="myFunction()">Click me</button>
-
+   
+    <!--Make use of sliders with prompts to determine answers for questions    -->
+    <div class="slider">
+        <p>How many hours do you sleep a night?</p>
+        <input type="range" min="0" max="24" value="12" class="slider" id="myRange">
+        <p>Value: <span id="demo"></span></p>
 
 </body>
 </html>

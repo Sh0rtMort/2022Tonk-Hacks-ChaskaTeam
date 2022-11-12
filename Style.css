@@ -1,0 +1,9 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-weight: 100;
+    font-size: medium;
+    background-color: rgb(226, 238, 224);
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
