@@ -1,13 +1,17 @@
-//Create 10 vars named for a question number 1-10 and set them to 0
-var q1 = 0;
-var q2 = 0;
-var q3 = 0;
-var q4 = 0;
-var q5 = 0;
-var q6 = 0;
-var q7 = 0;
-var q8 = 0;
-var q9 = 0;
-var q10 = 0;
+const form = document.querySelector("form"),
+        nextBtn = form.querySelector(".nextBtn"),
+        backBtn = form.querySelector(".backBtn"),
+        allInput = form.querySelectorAll(".first input");
 
 
+nextBtn.addEventListener("click", ()=> {
+    allInput.forEach(input => {
+        if(input.value != ""){
+            form.classList.add('secActive');
+        }else{
+            form.classList.remove('secActive');
+        }
+    })
+})
+
+backBtn.addEventListener("click", () => form.classList.remove('secActive'));

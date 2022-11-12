@@ -1,9 +1,265 @@
-*, *::before, *::after {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-weight: 100;
-    font-size: medium;
-    background-color: rgb(226, 238, 224);
-    color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
+    body {
+    background: rgba(186 226 179);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .container {
+    position: relative;
+    max-width: 90;
+    width: 80%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .container header {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    }
+
+    .container header::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        height: 3px;
+        width: 27px;
+        border-radius: 8px;
+        background-color: #4070f4;
+    }
+
+    .container form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+    overflow: hidden;
+    }
+
+    .container form .form {
+    position: absolute; 
+    background-color: #fff;
+    transition: 0.3s ease;
+    }
+
+    .container form .form.second {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+    }
+
+    form.secActive .form.second {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+    }
+
+    form.secActive .form.first {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+    }
+
+    .container form .form {
+        position: absolute;
+    }
+    .container form .details {
+    margin-top: 30px;
+    }
+
+    .container form .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+    }
+
+    .container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+    form .fields .input-fields   {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 20px 0;
+    }
+
+    .input-fields label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2e2e2e;
+    }
+
+    .input-fields input {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px, 0;
+    }
+
+    .input-fields input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+    }        
+
+    .input-fields input[type="date"] {
+    color: #707070;
+    }
+
+    .input-fields input[type="date"]:valid {
+    color: #333;
+    }
+
+    .container form button , .backBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3 linear;
+    cursor: pointer;
+    }
+
+    .container form button,
+    .container form .backBtn {
+    font-size: 14px;
+    font-weight: 400;
+    }
+
+    form button:hover {
+    background-color: #265df2;
+    }
+
+    form button i,
+    form .backBtn i {
+    margin-left: 0 6px;
+    }
+
+    form .backBtn i {
+    transform: rotate(180deg);
+    }
+    
+
+    form .buttons {
+    display: flex;
+    align-items: center;
+    }
+
+    form .buttons button , .nextBtn {
+    margin-right: 14px;
+    }
+
+    @media (max-width: 750px) {
+        .container form{
+            overflow-y: scroll;
+        }
+        .container form::-webkit-scrollbar{
+           display: none;
+        }
+           form .fields .input-field{
+            width: calc(100% / 2 - 15px);
+        }
+    }
+
+    @media (max-width: 550px) {
+         form .fields .input-field{
+            width: 100%;
+        }
+    }
+
+
+    .slider {
+    height: 90px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-left: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0, 3px, 6px, rgba(0, 0, 0, 0.13);
+    }
+
+    .slider label {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 5px;
+    color: black;
+    flex-direction: column;
+    }
+
+    .slider input[type="range"] {
+    width: 420px;
+    height: 2px;
+    background: black;
+    border: none;
+    outline: none;
+    }
+
+
+
+    /* .slider {
+    position: absolute;
+    top: 40%; FIXME add the right positioning and margin spacing 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 60px;
+    padding: 30px;
+    padding-left: 40px;
+    background: #fcfcfc;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 15px 40px #7E6D5766;
+    }
+    .slider label {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Open Sans;
+    padding-left: 10px;
+    color: black;
+    }
+    .slider input[type="range"] {
+    width: 420px;
+    height: 2px;
+    background: black;
+    border: none;
+    outline: none;
+    }
+
+    

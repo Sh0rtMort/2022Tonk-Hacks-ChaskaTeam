@@ -3,16 +3,132 @@
 <head>
     <title></title>
     <link rel="stylesheet" href="Style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>My First Web Page</h1> <!--Make a good name for this</!-->
-   
-    <!--Make use of sliders with prompts to determine answers for questions    -->
-    <div class="slider">
-        <p>How many hours do you sleep a night?</p>
-        <input type="range" min="0" max="24" value="12" class="slider" id="myRange">
-        <p>Value: <span id="demo"></span></p>
+    <!-- make a container-->
+    <div class="container">
+        <header>Identification Information</header>
+    <form action="#">
+        <div class="form first">
+            <span class="title">Company Details</span>
+            <div class="fields">
+                <div class="input-fields">
+                    <label for="name">Please Provide Comapny Name:</label>
+                    <input type="text" id="cName" name="cName" placeholder="Enter the companies name" required>
+                </div>
+                <div class="input-fields">
+                    <label for="name">Date of Inspection:</label>
+                    <input type="date" id="cName" name="cName" placeholder="Enter date in mm/dd/yy" required>
+                </div>
+
+                <div class="input-fields">
+                    <label for="name">Address of Company:</label>
+                    <input type="text" id="cName" name="cName" placeholder="Enter the companies address" required>
+                    
+                </div>
+                <div class="input-fields">
+                    <label for="name">How Many Employees Working for Company</label>
+                    <input type="number" id="cName" name="cName" placeholder="How many Employees actively working" required>
+                </div>
+    
+                <div class="input-fields">
+                    <label for="name">placeholder</label>
+                    <input type="date" id="cName" name="cName" placeholder="Enter date in mm/dd/yy" required>
+                </div>
+                <div class="input-fields">
+                    <label for="name">placeholder</label>
+                    <input type="text" id="cName" name="cName" placeholder="Enter the companies address" required>
+                </div>
+            </div>
+
+            <button class="nextBtn">
+                <span class="btnText">Next</span>
+                <i class="uil uil-navigator"></i>
+            </button>
+        </div>
+
+        <div class="form second">
+            <span class="title">Inspection Questions</span>
+            <div class="fields">
+                <div class="slider">
+                    <label for="fader">How Sustainable is your Company? </label>
+                    <input type="range" min="0" max="10" value="5" id="fader" 
+                    step="1" list="volsettings" oninput="rangeValue.innerText = this.value"> 
+                    <p id="rangeValue">5</p>
+                    <datalist id="volsettings">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    </datalist>
+                    </div>
+            </div>
+            <div class="buttons">
+                <div class="backBtn">
+                    <i class="uil uil-navigator"></i>
+                    <span class="btnText">Back</span>
+                </div>
+
+                <button class="sumbit">
+                    <span class="btnText">Submit</span>
+                    <i class="uil uil-navigator"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+    <!-- make a panel that has as slider in it-->
+    <!-- <div class="slider">
+        <label for="fader">How Sustainable is your Company? </label>
+        <input type="range" min="0" max="10" value="5" id="fader" 
+        step="1" list="volsettings" oninput="rangeValue.innerText = this.value">
+        <p id="rangeValue">5</p>
+        <datalist id="volsettings">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        </datalist>
+        </div>
+
+    <div class="slider1">
+        <label for="fader">How Electrically efficient is your company? </label>
+        <input type="range" min="0" max="10" value="5" id="fader" 
+        step="1" list="volsettings" oninput="rangeValue.innerText = this.value">
+        <p id="rangeValue">5</p>
+        <datalist id="volsettings">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        </datalist>
+        </div> -->
 
 </body>
 </html>
