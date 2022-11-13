@@ -18,7 +18,7 @@ function getWeighted(Category, values) {
     return weighted;
     }
 
-
+//calculates and makes certain scores better than others
 function getWeightedTotalScore() {
     var landScore = weightedAverage(landValues, landWeights);
     var energyScore = weightedAverage(energyValues, energyWeights);
