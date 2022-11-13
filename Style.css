@@ -34,6 +34,14 @@
         color: #333;
     }
 
+    /* make logo center on page */
+    .container img {
+        display: block;
+        margin-left: 35%;
+        /* margin-right: 50%; */
+        width: 25%;
+    }
+
     /* set up graphic line below header */
     .container header::before {
             content: "";
