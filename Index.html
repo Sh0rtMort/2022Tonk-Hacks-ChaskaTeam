@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>PEET Input</title>
+    <link href="Style.css" rel="stylesheet">
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
     <script src="script.js"></script>
 </head>
 <body>
-    
-    <!-- make a container-->
-    <div class="container">
-        <!-- make an image for PEEMLogo.png -->
+<!-- make a container-->
+<div class="container"><!-- make an image for PEEMLogo.png -->
     <img id="logo" src="Assets/PEEMLogo.png" width="200" height="200">
-        <header>Identification Information</header> 
-    <body>
+    <header>Identification Information</header>
+    <body id="1">
         <div class="form first">
             <span class="title">Company Details:</span>
             <div class="fields">
@@ -29,13 +27,13 @@
                 <div class="input-fields">
                     <label for="name">Address of Company:</label>
                     <input type="text" id="SQ3" name="cName" placeholder="Enter the companies address" required>
-                    
+
                 </div>
                 <div class="input-fields">
                     <label for="name">How Many Employees Working for Company:</label>
                     <input type="number" id="SQ4" name="cName" placeholder="How many Employees actively working" required>
                 </div>
-    
+
                 <div class="input-fields">
                     <label for="name">Average Yearly Income of Company:</label>
                     <input type="number" id="SQ5" name="cName" placeholder="Yearly Income of Company" required>
@@ -179,14 +177,14 @@
                      </div>
 
                      <!-- Creates the Waste Questions -->
-                    <div class="waste ID">       
+                    <div class="waste ID">
                 <span class="Waste Section"></span>
                  <title class="WID">Waste Section:</title>
                     <div class="fields">
                         <div class="slider">
                             <label for="fader">#1: Company does not produce unecessesary Waste </label>
-                            <input type="range" min="0" max="10" value="5" id="WQ1" 
-                            step="1" list="w_score" oninput="rangeValueW.innerText = this.value"> 
+                            <input type="range" min="0" max="10" value="5" id="WQ1"
+                            step="1" list="w_score" oninput="rangeValueW.innerText = this.value">
                             <p id="rangeValueW">5</p>
                             <datalist id="w_score">
                             <option>0</option>
@@ -201,13 +199,13 @@
                             <option>9</option>
                             <option>10</option>
                             </datalist>
-                            </div>  
-        
+                            </div>
+
                             <!-- Creates the seconds Waste Slider -->
                         <div class="slider">
                             <label for="fader">#2: Company use recyclable materials and actively recycles </label>
-                            <input type="range" min="0" max="10" value="5" id="WQ2" 
-                            step="1" list="w_score1" oninput="rangeValueW.innerText = this.value"> 
+                            <input type="range" min="0" max="10" value="5" id="WQ2"
+                            step="1" list="w_score1" oninput="rangeValueW.innerText = this.value">
                             <p id="rangeValueW">5</p>
                             <datalist id="w_score1">
                             <option>0</option>
@@ -222,13 +220,13 @@
                             <option>9</option>
                             <option>10</option>
                             </datalist>
-                            </div> 
-        
+                            </div>
+
                             <!-- Creates the third Waste slider -->
                         <div class="slider">
                             <label for="fader">#3: Goods and services do not produce unecessesary waste </label>
-                            <input type="range" min="0" max="10" value="5" id="WQ3" 
-                            step="1" list="w_score2" oninput="rangeValueW.innerText = this.value"> 
+                            <input type="range" min="0" max="10" value="5" id="WQ3"
+                            step="1" list="w_score2" oninput="rangeValueW.innerText = this.value">
                             <p id="rangeValueW">5</p>
                             <datalist id="w_score2">
                             <option>0</option>
@@ -244,17 +242,28 @@
                             <option>10</option>
                             </datalist>
                             </div>
-                     </div> 
-        
-                <button class="sumbit"><a href="null">Submit</a>
-                    <i class="uil uil-navigator"></i>
-                </button>
-            </div>
-        </div>
+                     </div>
                 </button>
             </div>
         </div>
     </form>
+                        </div>
+
+
+                        <button id="submit" onclick="doUpdate()">
+                            <i class="uil uil-navigator"></i>
+
+                            <a> Submit </a>
+                        </button>
+
+                        <text id="Results">
+                            Test
+                        </text>
+                    </div>
+                </div>
+        </div>
+</div>
+</form>
 </div>
 </body>
 </html>
