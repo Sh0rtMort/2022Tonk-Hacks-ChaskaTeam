@@ -16,22 +16,22 @@
 
     /* set up container sizing and format */
     .container {
-    position: relative;
-    max-width: 90;
-    width: 70%;
-    border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
-    background-color: white;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        max-width: 90;
+        width: 70%;
+        border-radius: 6px;
+        padding: 30px;
+        margin: 0 15px;
+        background-color: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
     
     /* set up header sizing and color */
     .container header {
-    position: relative;
-    font-size: 20px;
-    font-weight: 600;
-    color: #333;
+        position: relative;
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
     }
 
     /* set up graphic line below header */
@@ -57,11 +57,11 @@
     
     /* Start of form set-up */
     .container form {
-    position: relative;
-    margin-top: 16px;
-    min-height: 490px;
-    background-color: #fff;
-    overflow: hidden;
+        position: relative;
+        margin-top: 16px;
+        min-height: 490px;
+        background-color: #fff;
+        overflow: hidden;
     }
 
     /* Set up and customize both Buttons */
@@ -152,23 +152,23 @@
             background: #fff;
             border-radius: 10px;
             box-shadow: 0, 3px, 6px, rgba(0, 0, 0, 0.13);
-            }
+        }
 
             /* customize the label or counter for the slider on the right */
-            .slider label {
+        .slider label {
             font-size: 16px;
             font-weight: 500;
             font-family: 'Times New Roman', Times, serif;
             padding-left: 5px;
             color: black;
             flex-direction: column;
-            }
+        }
 
             /* Make the slider itself look nice by adjusting its width and height to match input range */
-            .slider input[type="range"] {
+        .slider input[type="range"] {
             width: 420px;
             height: 2px;
             background: black;
             border: none;
             outline: none;
-            }
+        }

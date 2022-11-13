@@ -64,7 +64,7 @@
     }
 
     /* lower the form internals from top down */
-    .container form .details {
+    .container .details {
         margin-top: 30px;
     }
 
@@ -79,7 +79,7 @@
     }
 
     /* customize the input fields within the form */
-    .container form .fields {
+    .container .fields {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -87,7 +87,7 @@
     }
 
     /* most impressive thing here is the width calculation to put the input fields into 3 wide grids */
-    form .fields .input-fields   {
+     .fields .input-fields   {
         display: flex;
         width: calc(100% / 3 - 15px);
         flex-direction: column;
@@ -130,7 +130,7 @@
     }
 
     /* Customize the next button */
-    .container form button{
+    .container button{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -148,7 +148,7 @@
     }
 
     /* set up size and weight for the next button */
-    .container form button{
+    .container button{
         font-size: 14px;
         font-weight: 400;
     }
@@ -175,7 +175,7 @@
     }
 
      /* set up the form title customization */
-     .container form .title {
+     .container .title {
         margin-right: 100px;
         margin-top: 60px;
         /* margin-bottom: -50px; */
@@ -188,9 +188,20 @@
 
 
     /* set up the subheading for the Environmental Section(SE) */
-    .container form .ESID {
+    .container .ESID {
         margin-right: 100px;
-        margin-top: 60px;
+        margin-top: 70px;
+        margin-bottom: -30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .container .WID {
+        margin-right: 100px;
+        margin-top: 70px;
         margin-bottom: -50px;
         align-items: center;
         justify-content: center;
@@ -201,7 +212,8 @@
 
         /* Position sliders in middle of screen and allow for easy viewing */
     .slider {
-        margin: 80px;
+        margin-bottom: -40px;
+        margin: 50px;
         height: 90px;
         width: 50%;
         display: flex;

@@ -1,20 +1,3 @@
-const form = document.querySelector("form"),
-        nextBtn = form.querySelector(".nextBtn"),
-        backBtn = form.querySelector(".backBtn"),
-        allInput = form.querySelectorAll(".first input");
-
-        document.querySelector('body').addEventListener('click', event => {
-            if (event.target.matches('next')) {
-        event.preventDefault();
-                alert('hi')
-            }
-        });
-        document.querySelector('body').addEventListener('click', event => {
-            if (event.target.matches('submit')) {
-        event.preventDefault();
-                alert('hi')
-            }
-        });
 
 //Array of weights for each category
 var landWeights = [0.2, 0.2, 0.2, 0.2, 0.2];
@@ -55,9 +38,9 @@ function weightedAverage(values, weights) {
     });
     }
 
-enum Category {
-    Land = 0,
-    Energy = 1,
-    Waste = 2
-    }
+// enum Category {
+//     Land = 0,
+//     Energy = 1,
+//     Waste = 2
+//     }
 
