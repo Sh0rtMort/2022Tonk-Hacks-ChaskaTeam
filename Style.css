@@ -50,7 +50,7 @@
     overflow: hidden;
     }
 
-    .container form .form {
+    /* .container form .form {
     position: absolute; 
     background-color: #fff;
     transition: 0.3s ease;
@@ -63,9 +63,9 @@
     }
 
     form.secActive .form.second {
-    opacity: 1;
+    opacity: 0;
     pointer-events: auto;
-    transform: translateX(0);
+    transform: translateX(0%);
     }
 
     form.secActive .form.first {
@@ -76,7 +76,8 @@
 
     .container form .form {
         position: absolute;
-    }
+    } */
+
     .container form .details {
     margin-top: 30px;
     }
@@ -180,7 +181,7 @@
     margin-right: 14px;
     }
 
-    @media (max-width: 750px) {
+    /* @media (max-width: 750px) {
         .container form{
             overflow-y: scroll;
         }
@@ -196,10 +197,10 @@
          form .fields .input-field{
             width: 100%;
         }
-    }
+    } */
 
 
-    .slider {
+    /* .slider {
     height: 90px;
     width: 50%;
     display: flex;
@@ -228,7 +229,7 @@
     background: black;
     border: none;
     outline: none;
-    }
+    } */
 
 
 
