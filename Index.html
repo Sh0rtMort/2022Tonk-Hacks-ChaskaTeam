@@ -12,258 +12,254 @@
     <img id="logo" src="Assets/PEEMLogo.png" width="200" height="200">
     <header>Identification Information</header>
     <body id="1">
-        <div class="form first">
-            <span class="title">Company Details:</span>
-            <div class="fields">
-                <div class="input-fields">
-                    <label for="name">Please Provide Company Name:</label>
-                    <input type="text" id="SQ1" name="cName" placeholder="Enter the companies name" required>
-                </div>
-                <div class="input-fields">
-                    <label for="name">Date of Inspection:</label>
-                    <input type="date" id="SQ2" name="cName" placeholder="Enter date in mm/dd/yy" required>
-                </div>
-
-                <div class="input-fields">
-                    <label for="name">Address of Company:</label>
-                    <input type="text" id="SQ3" name="cName" placeholder="Enter the companies address" required>
-
-                </div>
-                <div class="input-fields">
-                    <label for="name">How Many Employees Working for Company:</label>
-                    <input type="number" id="SQ4" name="cName" placeholder="How many Employees actively working" required>
-                </div>
-
-                <div class="input-fields">
-                    <label for="name">Average Yearly Income of Company:</label>
-                    <input type="number" id="SQ5" name="cName" placeholder="Yearly Income of Company" required>
-                </div>
-                <div class="input-fields">
-                    <label for="name">Type of Company:</label> <!-- change this question cause its wack-->
-                    <input type="text" id="SQ6" name="cName" placeholder="IE: Engineering, Grocery, Software" required>
-                </div>
+    <div class="form first">
+        <span class="title">Company Details:</span>
+        <div class="fields">
+            <div class="input-fields">
+                <label for="name">Please Provide Company Name:</label>
+                <input type="text" id="SQ1" name="cName" placeholder="Enter the companies name" required>
             </div>
-                <body>
-                <header>Inspection Questions</header>
-            <span class="title">Electrical Section:</span>
-            <span class="title">1 = Destructive to Environmental, 3 = Detremental Impact, 5 = Moderatly Negative, 8 = No Negative Impact, 10 = Large Positive Impact</span> <!-- Use points from graph made yesterday -->
-                    <div class="fields">
-                        <div class="slider">
-                            <label for="fader">#1: Company's energy is sustainable within its commnity </label>
-                            <input type="range" min="0" max="10" value="5" id="EletQ1" 
-                            step="1" list="score" oninput="rangeValue.innerText = this.value"> 
-                            <p id="rangeValue">5</p>
-                            <datalist id="score">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            </datalist>
-                            </div>
-        
-                        <div class="slider">
-                            <label for="fader">#2: Company makes efforts to use clean and renewable energy </label>
-                            <input type="range" min="0" max="10" value="5" id="EletQ2" 
-                            step="1" list="score1" oninput="rangeValue1.innerText = this.value"> 
-                            <p id="rangeValue1">5</p>
-                            <datalist id="score1">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            </datalist>
-                            </div>
-        
-                        <div class="slider">
-                            <label for="fader">#3: Company uses energy efficiently and does not waste it. </label>
-                            <input type="range" min="0" max="10" value="5" id="EletQ3" 
-                            step="1" list="score2" oninput="rangeValue2.innerText = this.value"> 
-                            <p id="rangeValue2">5</p>
-                            <datalist id="score2">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            </datalist>
-                            </div>
-        
-                            <!-- Creates the first Environmental Slider -->
-                    <div class="details ID">       
-                <span class="Environmental Section"></span>
-                 <title class="ESID">Environmental Section:</title>
-                    <div class="fields">
-                        <div class="slider">
-                            <label for="fader">#1: Land converted provides approximately equal economic gain to potential habitat destroyed. </label>
-                            <input type="range" min="0" max="10" value="5" id="EnvQ1" 
-                            step="1" list="EN_score" oninput="rangeValueEN.innerText = this.value"> 
-                            <p id="rangeValueEN">5</p>
-                            <datalist id="EN_score">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            </datalist>
-                            </div>  
-        
-                            <!-- Creates the seconds Environmental Slider -->
-                        <div class="slider">
-                            <label for="fader">#2: Logistics behind goods and services do not impact environment </label>
-                            <input type="range" min="0" max="10" value="5" id="EnvQ2" 
-                            step="1" list="score" oninput="rangeValueEN1.innerText = this.value"> 
-                            <p id="rangeValueEN1">5</p>
-                            <datalist id="EN_score1">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            </datalist>
-                            </div> 
-        
-                            <!-- Creates the third Environmental slider -->
-                        <div class="slider">
-                            <label for="fader">#3: Goods/Services can provide positive impacts for the environment </label>
-                            <input type="range" min="0" max="10" value="5" id="EnvQ3" 
-                            step="1" list="EN_score2" oninput="rangeValueEN2.innerText = this.value"> 
-                            <p id="rangeValueEN2">5</p>
-                            <datalist id="EN_score2">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            </datalist>
-                            </div>
-                     </div>
+            <div class="input-fields">
+                <label for="name">Date of Inspection:</label>
+                <input type="date" id="SQ2" name="cName" placeholder="Enter date in mm/dd/yy" required>
+            </div>
 
-                     <!-- Creates the Waste Questions -->
-                    <div class="waste ID">
-                <span class="Waste Section"></span>
-                 <title class="WID">Waste Section:</title>
+            <div class="input-fields">
+                <label for="name">Address of Company:</label>
+                <input type="text" id="SQ3" name="cName" placeholder="Enter the companies address" required>
+
+            </div>
+            <div class="input-fields">
+                <label for="name">How Many Employees Working for Company:</label>
+                <input type="number" id="SQ4" name="cName" placeholder="How many Employees actively working" required>
+            </div>
+
+            <div class="input-fields">
+                <label for="name">Average Yearly Income of Company:</label>
+                <input type="number" id="SQ5" name="cName" placeholder="Yearly Income of Company" required>
+            </div>
+            <div class="input-fields">
+                <label for="name">Type of Company:</label> <!-- change this question cause its wack-->
+                <input type="text" id="SQ6" name="cName" placeholder="IE: Engineering, Grocery, Software" required>
+            </div>
+        </div>
+        <body>
+        <header>Inspection Questions</header>
+        <span class="title">Electrical Section:</span>
+        <span class="title">1 = Destructive to Environmental, 3 = Detremental Impact, 5 = Moderatly Negative, 8 = No Negative Impact, 10 = Large Positive Impact</span>
+        <!-- Use points from graph made yesterday -->
+        <div class="fields">
+            <div class="slider">
+                <label for="fader">#1: Company's energy is sustainable within its commnity </label>
+                <input type="range" min="0" max="10" value="5" id="EletQ1"
+                       step="1" list="score" oninput="rangeValue.innerText = this.value">
+                <p id="rangeValue">5</p>
+                <datalist id="score">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </datalist>
+            </div>
+
+            <div class="slider">
+                <label for="fader">#2: Company makes efforts to use clean and renewable energy </label>
+                <input type="range" min="0" max="10" value="5" id="EletQ2"
+                       step="1" list="score1" oninput="rangeValue1.innerText = this.value">
+                <p id="rangeValue1">5</p>
+                <datalist id="score1">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </datalist>
+            </div>
+
+            <div class="slider">
+                <label for="fader">#3: Company uses energy efficiently and does not waste it. </label>
+                <input type="range" min="0" max="10" value="5" id="EletQ3"
+                       step="1" list="score2" oninput="rangeValue2.innerText = this.value">
+                <p id="rangeValue2">5</p>
+                <datalist id="score2">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </datalist>
+            </div>
+
+            <!-- Creates the first Environmental Slider -->
+            <div class="details ID">
+                <span class="Environmental Section"></span>
+                <title class="ESID">Environmental Section:</title>
+                <div class="fields">
+                    <div class="slider">
+                        <label for="fader">#1: Land converted provides approximately equal economic gain to potential
+                            habitat destroyed. </label>
+                        <input type="range" min="0" max="10" value="5" id="EnvQ1"
+                               step="1" list="EN_score" oninput="rangeValueEN.innerText = this.value">
+                        <p id="rangeValueEN">5</p>
+                        <datalist id="EN_score">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </datalist>
+                    </div>
+
+                    <!-- Creates the seconds Environmental Slider -->
+                    <div class="slider">
+                        <label for="fader">#2: Logistics behind goods and services do not impact environment </label>
+                        <input type="range" min="0" max="10" value="5" id="EnvQ2"
+                               step="1" list="score" oninput="rangeValueEN1.innerText = this.value">
+                        <p id="rangeValueEN1">5</p>
+                        <datalist id="EN_score1">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </datalist>
+                    </div>
+
+                    <!-- Creates the third Environmental slider -->
+                    <div class="slider">
+                        <label for="fader">#3: Goods/Services can provide positive impacts for the environment </label>
+                        <input type="range" min="0" max="10" value="5" id="EnvQ3"
+                               step="1" list="EN_score2" oninput="rangeValueEN2.innerText = this.value">
+                        <p id="rangeValueEN2">5</p>
+                        <datalist id="EN_score2">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </datalist>
+                    </div>
+                </div>
+
+                <!-- Creates the Waste Questions -->
+                <div class="waste ID">
+                    <span class="Waste Section"></span>
+                    <title class="WID">Waste Section:</title>
                     <div class="fields">
                         <div class="slider">
                             <label for="fader">#1: Company does not produce unecessesary Waste </label>
                             <input type="range" min="0" max="10" value="5" id="WQ1"
-                            step="1" list="w_score" oninput="rangeValueW.innerText = this.value">
+                                   step="1" list="w_score" oninput="rangeValueW.innerText = this.value">
                             <p id="rangeValueW">5</p>
                             <datalist id="w_score">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
                             </datalist>
-                            </div>
+                        </div>
 
-                            <!-- Creates the seconds Waste Slider -->
+                        <!-- Creates the seconds Waste Slider -->
                         <div class="slider">
                             <label for="fader">#2: Company use recyclable materials and actively recycles </label>
                             <input type="range" min="0" max="10" value="5" id="WQ2"
-                            step="1" list="w_score1" oninput="rangeValueW.innerText = this.value">
-                            <p id="rangeValueW">5</p>
+                                   step="1" list="w_score1" oninput="rangeValueW1.innerText = this.value">
+                            <p id="rangeValueW1">5</p>
                             <datalist id="w_score1">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
                             </datalist>
-                            </div>
+                        </div>
 
-                            <!-- Creates the third Waste slider -->
+                        <!-- Creates the third Waste slider -->
                         <div class="slider">
                             <label for="fader">#3: Goods and services do not produce unecessesary waste </label>
                             <input type="range" min="0" max="10" value="5" id="WQ3"
-                            step="1" list="w_score2" oninput="rangeValueW.innerText = this.value">
-                            <p id="rangeValueW">5</p>
+                                   step="1" list="w_score2" oninput="rangeValueW2.innerText = this.value">
+                            <p id="rangeValueW2">5</p>
                             <datalist id="w_score2">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
                             </datalist>
-                            </div>
-                     </div>
-                </button>
-            </div>
-        </div>
-    </form>
                         </div>
-
-
-                        <button id="submit" onclick="doUpdate()">
-                            <i class="uil uil-navigator"></i>
-
-                            <a> Submit </a>
-                        </button>
-
-                        <text id="Results">
-                            Test
-                        </text>
                     </div>
                 </div>
+            </div>
         </div>
-</div>
-</form>
+
+
+        <button id="submit" onclick="doUpdate()">
+            <i class="uil uil-navigator"></i>
+
+            <a> Submit </a>
+        </button>
+
+        <text id="Results">
+            Test
+        </text>
+    </div>
 </div>
 </body>
 </html>
