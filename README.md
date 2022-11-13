@@ -8,8 +8,8 @@ open a web browser tab and open Index.html.(Ctrl 'o')<br>
 after opening it your good to go!.<br>
 ********************************************************
 
-#***Note:***
-#Index2.html & Style2.html are not important anymore and mearly act as an archive bin for out code.<br>
+***Note:***
+Index2.html & Style2.html are not important anymore and mearly act as an archive bin for out code.<br>
 <br>
 <br>
 <br>
