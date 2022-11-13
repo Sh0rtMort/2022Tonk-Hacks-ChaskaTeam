@@ -20,5 +20,5 @@
 
 
 ## Authors:
-[Kaden Morton](https://github.com/Sh0rtMort)
+[Kaden Morton](https://github.com/Sh0rtMort)<br>
 [Lucas Igl](https://github.com/Kingboo20)
