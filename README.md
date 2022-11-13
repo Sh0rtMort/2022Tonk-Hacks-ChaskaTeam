@@ -2,10 +2,10 @@
 ## The program that will revolutionize environmental awarness
 *******************************************************
 
-# **To Download PEET:***
-##After downloading the file by clicking code->download zip.<br>
-##open a web browser tab and open Index.html.(Ctrl 'o')<br>
-##after opening it your good to go!.<br>
+# **To Download PEET:**
+After downloading the file by clicking code->download zip.<br>
+open a web browser tab and open Index.html.(Ctrl 'o')<br>
+after opening it your good to go!.<br>
 ********************************************************
 
 #***Note:***
