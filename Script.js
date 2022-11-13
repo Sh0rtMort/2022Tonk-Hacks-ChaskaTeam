@@ -32,6 +32,7 @@ function getWeighted(Category, values) {
             break;
             }
     var weightedAverage = weightedAverage(values, weights);
+    return weightedAverage;
     }
 
 
