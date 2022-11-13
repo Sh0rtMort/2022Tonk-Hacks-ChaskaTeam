@@ -1,10 +1,11 @@
+/* set up universals */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-
+    /* Set up main body */
     body {
     background: rgba(186 226 179);
     min-height: 100vh;
@@ -13,6 +14,7 @@
     justify-content: center;
     }
 
+    /* set up container sizing and format */
     .container {
     position: relative;
     max-width: 90;
@@ -24,14 +26,15 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
     
+    /* set up header sizing and color */
     .container header {
-    
     position: relative;
     font-size: 20px;
     font-weight: 600;
     color: #333;
     }
 
+    /* set up graphic line below header */
     .container header::before {
         content: "";
         position: absolute;
@@ -43,6 +46,7 @@
         background-color: #4070f4;
     }
 
+    /* lower the subheading from top down */
     .container form .details {
         margin-top: 30px;
     }
@@ -51,7 +55,7 @@
         margin-top: 30px;
     }
     
-
+    /* Start of form set-up */
     .container form {
     position: relative;
     margin-top: 16px;
@@ -60,6 +64,7 @@
     overflow: hidden;
     }
 
+    /* Set up and customize both Buttons */
     .container form button, .backBtn{
         display: flex;
         align-items: center;
@@ -77,28 +82,39 @@
         cursor: pointer;
         }
 
+        /* adjust button texts sizing and weight */
         .container form .btnText{
             font-size: 14px;
             font-weight: 400;
         }
+
+        /* Make a hover effect */
         form button:hover{
             background-color: #265df2;
         }
+
+        /* set up margins for both buttons graphics */
         form button i,
         form .backBtn i{
             margin: 0 6px;
         }
+
+        /* rotate the back buttons graphic so its facing backwards */
         form .backBtn i{
             transform: rotate(180deg);
         }
+
+        /* align buttons */
         form .buttons{
             display: flex;
             align-items: center;
         }
+        /* adjust right margin for both buttons */
         form .buttons button , .backBtn{
             margin-right: 14px;
         }
 
+        /* set up the form title customization */
         .container form .title {
             margin-right: 100px;
             margin-top: 60px;
@@ -110,6 +126,7 @@
             font-size: 20px;
         }
 
+        /* set up the subheading for the Environmental Section(SE) */
         .container form .ESID {
             margin-right: 100px;
             margin-top: 60px;
@@ -121,36 +138,37 @@
             font-size: 20px;
         }
 
+        /* Position sliders in middle of screen and allow for easy viewing */
+        .slider {
+            margin: 100px;
+            height: 90px;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 10px;
+            padding-left: 40px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0, 3px, 6px, rgba(0, 0, 0, 0.13);
+            }
 
+            /* customize the label or counter for the slider on the right */
+            .slider label {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 5px;
+            color: black;
+            flex-direction: column;
+            }
 
-.slider {
-    margin: 100px;
-    height: 90px;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px;
-    padding-left: 40px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0, 3px, 6px, rgba(0, 0, 0, 0.13);
-    }
-
-    .slider label {
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Times New Roman', Times, serif;
-    padding-left: 5px;
-    color: black;
-    flex-direction: column;
-    }
-
-    .slider input[type="range"] {
-    width: 420px;
-    height: 2px;
-    background: black;
-    border: none;
-    outline: none;
-    }
+            /* Make the slider itself look nice by adjusting its width and height to match input range */
+            .slider input[type="range"] {
+            width: 420px;
+            height: 2px;
+            background: black;
+            border: none;
+            outline: none;
+            }

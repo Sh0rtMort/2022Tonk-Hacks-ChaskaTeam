@@ -73,6 +73,7 @@
                     </datalist>
                     </div>
 
+                    <!-- Creates the first Environmental Slider -->
             <div class="details ID">       
         <span class="Environmental Section"></span>
          <title class="ESID">Environmental Section:</title>
@@ -97,8 +98,9 @@
                     </datalist>
                     </div>  
 
+                    <!-- Creates the seconds Environmental Slider -->
                 <div class="slider">
-                    <label for="fader">#1: How Sustainable is your Company? </label>
+                    <label for="fader">#2: How Sustainable is your Company? </label>
                     <input type="range" min="0" max="10" value="5" id="fader" 
                     step="1" list="score" oninput="rangeValueEN1.innerText = this.value"> 
                     <p id="rangeValueEN1">5</p>
@@ -117,8 +119,9 @@
                     </datalist>
                     </div> 
 
+                    <!-- Creates the third Environmental slider -->
                 <div class="slider">
-                    <label for="fader">#1: How Sustainable is your Company? </label>
+                    <label for="fader">#3: How Sustainable is your Company? </label>
                     <input type="range" min="0" max="10" value="5" id="fader" 
                     step="1" list="EN_score2" oninput="rangeValueEN2.innerText = this.value"> 
                     <p id="rangeValueEN2">5</p>
@@ -141,14 +144,12 @@
 
 
     <div class="buttons">
-        <button class="backBtn"><a href="Index.html">Back</a>
+        <a href="Index.html"><button class="backBtn">Back</a>
             <i class="uil uil-navigator"></i>
-            <!-- <span class="btnText">Back</span> -->
             </button>
         </div>
 
         <button class="sumbit"><a href="null">Submit</a>
-            <!-- <span class="btnText">Submit</span> -->
             <i class="uil uil-navigator"></i>
         </button>
     </div>
