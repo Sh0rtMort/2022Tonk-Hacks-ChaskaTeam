@@ -7,7 +7,8 @@
 }
     /* Set up main body */
     body {
-        background: rgba(186 226 179);
+        /* background: rgba(186 226 179); */
+        background: #82bed8;
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -35,9 +36,9 @@
     }
 
     /* make logo center on page */
-    .container img {
+    .container .logoImage {
         display: block;
-        margin-left: 35%;
+        margin-left: 38%;
         /* margin-right: 50%; */
         width: 25%;
     }
@@ -55,7 +56,7 @@
     }
 
     /* Customize the form */
-    .container form {
+    .container {
         position: relative;
         margin-top: 16px;
         min-height: 490px;
@@ -69,7 +70,7 @@
     }
 
     /* Customise the container title */
-    .container form .title {
+    .container .title {
         display: block;
         margin-bottom: 8px;
         font-size: 16px;
@@ -212,7 +213,12 @@
 
         /* Position sliders in middle of screen and allow for easy viewing */
     .slider {
+        top: 50%;
+        left: 50%;
+        margin-left: 40%;
+        margin-right: auto;
         margin-bottom: -40px;
+        transform: translate(40%, 50%);
         margin: 50px;
         height: 90px;
         width: 50%;
@@ -245,5 +251,87 @@
         border: none;
         outline: none;
     }
+
+    .container .energy {
+        display: block;
+        margin-left: 25%;
+        /* margin-right: 50%; */
+        width: 35%;
+        height: auto;
+    }
+    .container .land {
+        display: block;
+        margin-left: 25%;
+        /* margin-right: 50%; */
+        width: 35%;
+        height: auto;
+    }
+    .container .wasteLo {
+        display: block;
+        margin-left: 35%;
+        /* margin-right: 50%; */
+        width: 35%;
+        height: auto;
+    }
+    .container .overall {
+        display: block;
+        margin-left: 40%;
+        /* margin-right: 50%; */
+        width: 15%;
+        height: auto;
+    }
+
+    .container .ovEner {
+        margin-top: 40px;
+        margin-bottom: 5px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        align-items: inherit; 
+        margin-left: 15%;
+        margin-right: auto;
+    }
+    .container .ovLand {
+        margin-top: 40px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        padding-top: 15px;
+        align-items: inherit; 
+        margin-left: 15%;
+        margin-right: auto;
+    }
+    .container .ovWaste {
+        margin-top: 40px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        padding-top: 15px;
+        align-items: inherit; 
+        margin-left: 20%;
+        margin-right: auto;
+    }
+    .container .ovOv {
+        margin-top: 40px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        padding-top: 15px;
+        align-items: inherit; 
+        margin-left: 40%;
+        margin-right: auto;
+    }
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+        float: left;
+        width: 33%;
+        padding: 5px;
+    }
+  
+  /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    
 
     

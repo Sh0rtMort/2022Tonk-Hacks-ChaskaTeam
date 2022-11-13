@@ -9,7 +9,8 @@
 <body>
 <!-- make a container-->
 <div class="container"><!-- make an image for PEEMLogo.png -->
-    <img id="logo" src="Assets/PEEMLogo.png" width="200" height="200">
+    <div class="logoImage">
+    <img id="logo" src="Assets/PEEMLogo.png" width="200" height="200"></div>
     <header>Identification Information</header>
     <body id="1">
     <div class="form first">
@@ -256,10 +257,23 @@
             <a> Submit </a>
         </button>
 
-        <img id="energy" src="Assets/PEEMLogo.png" width="200px", height="200px">
-        <img id="land" src="Assets/PEEMLogo.png" width="200px", height="200px">
-        <img id="waste" src="Assets/PEEMLogo.png" width="200px", height="200px">
-        <img id="overall" src="Assets/PEEMLogo.png" width="200px", height="200px">
+        <div class="ovOv">Companies Overall Score:</div>
+        <img class="overall" id="overall" src="Assets/PEEMLogo.png" width="200px", height="200px">
+
+        <div class="row">
+            <div class="column">
+        <div class="ovEner">Companies Overall Energy Score:</div>
+        <img class="energy" id="energy" src="Assets/PEEMLogo.png" width="200px", height="200px" >
+            </div>
+            <div class="column">
+        <div class="ovLand">Companies Overall Land Score:</div>
+        <img class="land" id="land" src="Assets/PEEMLogo.png" width="200px", height="200px">
+            </div>
+            <div class="column">
+        <div class="ovWaste">Companies Overall Waste Score:</div>
+        <img class="wasteLo" id="waste" src="Assets/PEEMLogo.png" width="200px", height="200px">
+            </div>
+        </div>
     </div>
 </div>
 </body>
