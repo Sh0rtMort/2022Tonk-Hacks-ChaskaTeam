@@ -39,6 +39,7 @@
     .container .logoImage {
         display: block;
         margin-left: 38%;
+        margin-right: auto;
         /* margin-right: 50%; */
         width: 25%;
     }
