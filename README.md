@@ -1,2 +1,3 @@
-# 2022Tonk-Hacks-ChaskaTeam
-This is the repository for our little teams hack-athon code
+# Meet P.E.E.T
+## The program that will revolutionize environmental awarness
+
